@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+<style>
+    .aibvs_navbar{
+        background: #04182F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        height: 90px;
+        display: flex;
+        width: 100%;
+    }
+
+    .aibvs_navbar_logo{
+        padding-left:50px;
+    }
+
+
+    .aibvs_navbar_center{
+        padding-top:35px;
+        padding-left:130px;
+    }
+
+    .aibvs_navbar_center a{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #C4F0DB;
+        mix-blend-mode: normal;
+        text-decoration: none;
+        padding-top:36px;
+        padding-right:30px;
+    }
+
+    .aibvs_navbar_center a:hover{
+        color: #6CFFAB;
+        mix-blend-mode: normal;
+    }
+
+
+
+    .login-button{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height, or 129% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #CACCCF;
+        mix-blend-mode: normal;
+        text-decoration: none;
+        padding: 13px 30px;
+        border: 1px solid #CACCCF;
+        border-radius: 30px;
+    }
+
+
+    .login-button-border:hover{
+        border: 1px solid #6CFFAB;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+    }
+
+    .login-button-border:hover a.login-button{
+        border: 1px solid #6CFFAB;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+        color: #6CFFAB;
+        mix-blend-mode: normal;
+    }
+
+    .login-button-border:active{
+        border: 1px solid #CACCCF;
+        border-radius: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .login-button-border:active a.signup-button{
+        border: 1px solid #CACCCF;
+        border-radius: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+    }
+
+
+    .signup-button{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height, or 129% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #CACCCF;
+        mix-blend-mode: normal;
+        text-decoration: none;
+        padding: 13px 30px;
+        background: #9FFFC8;
+        border-radius: 30px;
+    }
+
+    .signup-button-border:hover{
+        background: #6CFFAB;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+    }
+
+    .signup-button-border:hover a.signup-button{
+        background: #6CFFAB;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+    }
+
+    .signup-button-border:active{
+        background: #9FFFC8;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+    }
+
+    .signup-button-border:active a.signup-button{
+        background: #9FFFC8;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+    }
+</style>
+
+<body style="width: 100%;margin:0;">
+<div class="aibvs_navbar">
+    <div class="aibvs_navbar_logo">
+        <a href="aibvs_navbar_left">
+            <img style="width: fit-content; min-height: -webkit-fill-available;" src="{{ aibvs_logo }}">
+        </a>
+    </div>
+
+    <div class="aibvs_navbar_center">
+        <a href="">{{ about_us_label }}</a>
+        <a href="">{{ agenda_label}}</a>
+        <a href="">{{ partners_label }}</a>
+        <a href="">{{ speakers_label }}</a>
+        <a href="">{{ tickets_label }}</a>
+        <a href="">{{ contact_label }}</a>
+        <a href="">{{ faq_label }}</a>
+
+    </div>
+
+    <div class="aibvs_navbar_right">
+        <ul style="display: flex; justify-content: flex-end; list-style: none; padding-left: 0px;">
+            <li>
+                <a href="" target="">
+                    <img src="{{ search_icon }}">
+                </a>
+            </li>
+
+            <li>
+                    <span class="login-button-border" >
+                     <a href="" class="login-button" target="_blank">
+                     {{ login_label }}
+                     </a>
+                    </span>
+            </li>
+            <li>
+                    <span class="signup-button-border" >
+                         <a href="" class="signup-button" target="_blank">
+                             {{ signup_label }}
+                          </a>
+                    </span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+
+</html>

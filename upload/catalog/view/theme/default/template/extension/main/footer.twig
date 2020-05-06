@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
+<style type="text/css" media="screen">
+
+    a{
+        text-decoration: none;
+    }
+
+    .aibvs-sixth-content,
+    .aibvs-seventh-content,
+    .aibvs-nineth-content,
+    .aibvs-footer-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .aibvs-sixth-column{
+        width: 255px;
+    }
+
+    .aibvs-sixth-colum img{
+        width: 255px;
+    }
+
+    .aibvs-seventh-column{
+        flex:33%;
+    }
+
+    .aibvs-sixth-column-text p{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        margin:0;
+        color: #000000;
+
+    }
+
+    .aibvs-sixth-column-text h1{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        align-items: center;
+        letter-spacing: 0.6px;
+        text-align: center;
+        color: #000000;
+        margin:0;
+        padding:0;
+
+    }
+
+    .aibvs-seventh-container{
+        background: #F2F2F2;
+        text-align: center;
+        padding: 130px 165px;
+    }
+
+    .aibvs-eighth-container h1,
+    .aibvs-nineth-container h1{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 47px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.3px;
+        margin:0;
+        /* Primary Color 1 */
+        color: #9FFFC8;
+    }
+
+    .aibvs-nineth-content{
+        align-items: flex-end;
+    }
+
+    .free-access-input{
+        width: 560px;
+        padding: 23px 39px;
+        text-align: left;
+        background: #FFFFFF;
+        border-radius: 20px;
+        border: none;
+        display: block;
+        outline: none;
+    }
+
+    .free-access-input::placeholder{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        align-items: center;
+        color: #787878;
+        align-content: center;
+    }
+
+    .free-access-input[type=email]{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        color: #787878;
+    }
+
+    .subscribe-input{
+        width: 560px;
+        padding: 23px 39px;
+        text-align: left;
+        background: #FFFFFF;
+        border-radius: 20px;
+        border: none;
+        display: block;
+        outline: none;
+    }
+
+    .subscribe-input::placeholder{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        align-items: center;
+        color: #787878;
+        align-content: center;
+    }
+
+    .subscribe-input[type=email]{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        color: #787878;
+    }
+
+    .aibvs-footer-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .newsletter-footer-input{
+        width: 200px;
+        padding: 2px 15px;
+        text-align: left;
+        background: #FFFFFF;
+        border-radius: 20px;
+        border: none;
+        display: block;
+        outline: none;
+    }
+
+    .newsletter-footer-input::placeholder{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #787878;
+
+    }
+
+    .newsletter-footer-input[type=email]{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #787878;
+    }
+
+    .aibvs-footer-column{
+        float: left;
+        text-align: left;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aibvs-footer-column a{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.3px;
+        color: #C4F0DB;
+
+    }
+
+    .aibvs-footer-column p{
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        margin:0;
+        letter-spacing: 0.3px;
+        color: #9FFFC8;
+    }
+
+    .footer-page-link{
+        width: 110px;
+        padding-left: 70px;
+    }
+
+    .contact-summit-column{
+        width:125px;
+        padding-left:95px;
+    }
+
+    .ticket-footer-column{
+        padding-left:95px;
+        width:110px;
+    }
+
+    .newsletter-footer-column{
+        justify-content: flex-start;
+    }
+</style>
+
+<body style="width: 100%;margin:0;">
+<div class="aibvs-sixth-container" style="text-align: center;justify-content: center;padding-bottom: 130px;">
+    <h1 style="padding: 100px 0;">{{ speakers_label }}</h1>
+    <div class="aibvs-sixth-content">
+        <div class="aibvs-sixth-column">
+            <img src="{{ cashierbook_logo }}">
+            <div class="aibvs-sixth-column-text">
+                <p>CEO, Artinbook</p>
+                <h1>Name of Speaker</h1>
+            </div>
+        </div>
+        <div class="aibvs-sixth-column">
+            <img src="{{ cashierbook_logo }}">
+            <div class="aibvs-sixth-column-text">
+                <p></p>
+                <h1></h1>
+            </div>
+        </div>
+        <div class="aibvs-sixth-column">
+            <img src="{{ cashierbook_logo }}">
+            <div class="aibvs-sixth-column-text">
+                <p></p>
+                <h1></h1>
+            </div>
+        </div>
+        <div class="aibvs-sixth-column">
+            <img src="{{ cashierbook_logo }}">
+            <div class="aibvs-sixth-column-text">
+                <p></p>
+                <h1></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="" class="top-content-button2" target="_blank">
+        <button style="display: inline-block;">
+            {{ apply_speak_button }}
+        </button>
+    </a>
+</div>
+
+<div class="aibvs-seventh-container">
+    <h1 style="padding:0;padding-bottom: 120px;">{{ speakers_label }}</h1>
+    <div class="aibvs-seventh-content">
+        <div class="aibvs-seventh-column">
+            <img src="{{ cashierbook_logo }}">
+        </div>
+        <div class="aibvs-seventh-column">
+            <img src="{{ cashierbook_logo }}">
+        </div>
+        <div class="aibvs-seventh-column">
+            <img src="{{ cashierbook_logo }}">
+        </div>
+    </div>
+
+    <a href="" class="top-content-button2" target="_blank">
+        <button style="display: inline-block;">
+            {{ become_partner_button }}
+        </button>
+    </a>
+</div>
+
+<div class="aibvs-eighth-container" style="padding-bottom:100px;padding-top:100px;text-align: center;background: #04182F;display: flex;flex-direction: column;align-items: center;align-content: center;">
+    <h1 style="padding-bottom: 50px;">{{ free_limit_access }}</h1>
+    <input type="email"autocomplete="off" class="free-access-input" placeholder="Enter your email to get a free ticket" />
+    <a href="" class="top-content-button" target="_blank">
+        <button>
+            {{ get_free_access_button }}
+        </button>
+    </a>
+</div>
+
+<div class="aibvs-nineth-container" style="padding-bottom:100px;padding-top: 100px;text-align: center;background:#151C2C;">
+    <h1>{{ subscribe_label }}</h1>
+    <div class="aibvs-nineth-content">
+        <div class="aibvs-nineth-column" style="padding-right: 30px;">
+            <input type="email" class="subscribe-input" autocomplete="off" placeholder="Enter your email to subscribe" />
+        </div>
+        <div class="aibvs-nineth-column">
+            <a href="" class="top-content-button2" target="_blank">
+                <button>
+                    {{  subscribe_button_text }}
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="aibvs-footer-container" style="background: #001022;">
+    <div class="aibvs-footer-content"  style="display: flex;flex-direction: row;padding: 50px 60px;align-content: flex-start;align-items: flex-start;justify-content: flex-start;">
+
+
+        <div class="aibvs-footer-column">
+            <img style="width:300px;" src="{{small_aibvs_logo}}">
+            <p style=" font-family:'Raleway',sans-serif;font-style: italic;font-weight: 300;font-size: 13px;line-height: 20px;letter-spacing: 0.3px; color: #C4F0DB;">{{ technology_text }}</p>
+        </div>
+        <div class="aibvs-footer-column footer-page-link">
+            <p>Home</p>
+            <a href="">{{ about_us_label }}</a>
+            <a href="">{{ agenda_label}}</a>
+            <a href="">{{ partners_label }}</a>
+            <a href="">{{ speakers_label }}</a>
+            <a href="">{{ tickets_label }}</a>
+            <a href="">{{ contact_label }}</a>
+            <a href="">{{ faq_label }}</a>
+        </div>
+
+        <div class="aibvs-footer-column contact-summit-column">
+            <div>
+                <p>{{ lastest_submit_label }}</p>
+            </div>
+
+            <div>
+                <p>{{ contact_label }}</p>
+            </div>
+        </div>
+        <div class="aibvs-footer-column ticket-footer-column">
+            <p>{{ tickets_label }}</p>
+            <a>{{ price_label }}</a>
+            <a>{{ payment_label }}</a>
+        </div>
+
+        <div class="aibvs-footer-column">
+            <div class="aibvs-footer-content newsletter-footer-column" style="display:flex;flex-direction: row; " >
+                <p>{{ news_label }}</p>
+                <input type="email" class="newsletter-footer-input" autocomplete="off" placeholder="Your email address" />
+            </div>
+            <div class="aibvs-footer-content" id="connect-footer">
+                <p>{{ connect_label }}</p>
+                <a href="">
+                    <img src="{{ facebook_logo }}">
+                </a>
+
+                <a href="">
+                    <img src="{{ instagram_logo }}">
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="aibvs-footer-column">
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
